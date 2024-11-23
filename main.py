@@ -14,7 +14,7 @@ class Main:
         """
         Application entry point
         """
-        self.cleaner.rename_files()
+        self.cleaner.process_images()
 
 
 

@@ -4,6 +4,7 @@ This module handles the labelling process of the images
 from pathlib import Path
 from openpyxl import Workbook
 
+
 class Labeller:
     """
     Provides methods for labelling images
@@ -29,6 +30,8 @@ class Labeller:
         """
         self.workbook.save(self.label_file)
         print("Labels saved successfully")
+    
+
 
 
 
