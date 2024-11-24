@@ -35,28 +35,37 @@ class Trainer:
         """
         Splits the dataset into training and test components
         """
+        print(self.images, self.y_onehot)
         x_train, x_test, y_train, y_test = train_test_split(
             self.images, self.y_onehot, test_size=0.2, random_state=42
         )
         return (x_train, x_test, y_train, y_test)
-    
+
     def build_cnn_model(self):
         """
         Builds the cnn model to use
         """
+        # Encode the labels before training
+        self.encode_categorical()
         model = Sequential(
-            # Build feature map and activation function and return an activation map.
-            Conv2D(32, (3, 3), activaton='relu', input_shape=(150, 150, 3)),
-            MaxPooling2D((2,2)),
-            Flatten(),
-            Dense(64, activateion='relu'),
-            Dense(8, activation='softmax')
+            [
+                # Build feature map and activation function and return an activation map.
+                Conv2D(32, (3, 3), activation="relu", input_shape=(150, 150, 3)),
+                MaxPooling2D((2, 2)),
+                Flatten(),
+                Dense(64, activation="relu"),
+                Dense(8, activation="softmax"),
+            ]
         )
 
         # Call the splitter and obtain the x_train and y_train values
-        x_train, x_test, y_train, y_test = split()
+        x_train, x_test, y_train, y_test = self.split()
 
-        model.compile(optimizer='adam', loss='categorical_cross_entropy', metrics=['accuracy'])
-        model.fit(x_train, y_train, epochs=5, batch_size=32, validation_data=(x_test, y_test))
+        model.compile(
+            optimizer="adam", loss="categorical_cross_entropy", metrics=["accuracy"]
+        )
+        model.fit(
+            x_train, y_train, epochs=5, batch_size=32, validation_data=(x_test, y_test)
+        )
 
         return model.predict(self.images)

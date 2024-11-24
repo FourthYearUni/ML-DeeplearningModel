@@ -7,6 +7,7 @@ import hashlib
 import subprocess
 
 from openpyxl import Workbook
+import pandas as pd
 
 class File:
     """
