@@ -14,7 +14,7 @@ from numpy import array
 from cleanlab import Datalab
 
 from ..Utils.files import File
-from ..Utils.labeller import Labeller
+from src.Utils.labeller import Labeller
 from ..Utils.resize import resize_picture
 
 
@@ -65,16 +65,16 @@ class Cleaner:
         """
         Process the labels and images and normalizes the image arrays
         """
-        labelsDf = read_excel(label_path)
-        labelsDf.head()
+        labels_df = read_excel(label_path)
+        labels_df.head()
         image_size = (150, 150)
 
         x = []  # Array for image
         y = []  # Array of label strings
 
-        for _, row in labelsDf.iterrows():
+        for _, row in labels_df.iterrows():
             img_path = os.path.join(data_folder, row["Image"])
-            if os.path.isfile (img_path) == False:
+            if os.path.isfile (img_path) is False:
                 continue
             img = load_img(img_path, target_size=image_size)
             x.append(img_to_array(img))
@@ -92,12 +92,12 @@ class Cleaner:
         invalid_images = 0
         total_processed_images = 0
 
-        for index, file in enumerate(os.listdir(self.clean_data_folder)):
+        for _, file in enumerate(os.listdir(self.clean_data_folder)):
             try:
                 abs_file = os.path.join(self.clean_data_folder, file)
                 total_resized_images += resize_picture(abs_file)
                 total_processed_images += 1
                 print(f"Total images processed: {total_processed_images}")
-            except Exception as ae:
+            except Exception:
                 invalid_images += 1
         return invalid_images, total_resized_images
