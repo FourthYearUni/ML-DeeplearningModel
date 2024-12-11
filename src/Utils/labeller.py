@@ -17,11 +17,10 @@ class Labeller:
         self.sheet["A1"] = "Label"
         self.sheet["B1"] = "Image"
     
-    def label_images(self, label: str, image: str, index: int) -> None:
+    def label_images(self, label: str, image: str) -> None:
         """
         Labels the images
         """
-        print(f"Index is {index}")
         self.sheet.append([label, image])
     
     def save_labels(self) -> None:

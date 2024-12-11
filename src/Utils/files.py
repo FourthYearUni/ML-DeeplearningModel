@@ -8,6 +8,7 @@ import subprocess
 
 from openpyxl import Workbook
 import pandas as pd
+from PIL import Image
 
 class File:
     """
@@ -64,3 +65,16 @@ class File:
         """
         os.remove(file_path)
         print(f"Deleted file {file_path}")
+    
+    def construct_image(self, image_array) -> Image:
+        """
+        Constructs an Image from a PIL image array
+        """
+        img = Image.fromarray((image_array * 255).astype('uint8'))
+        return img
+    
+    def save_file(self, dest, img) -> bool:
+        """
+        Saves a passed img to the passed destination
+        """
+        
