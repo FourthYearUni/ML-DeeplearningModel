@@ -6,16 +6,18 @@ This module handles data cleaning and labelling.
 import os
 import shutil
 from pathlib import Path
+import random
+from os.path import join
 
-import cv2
 from pandas import read_excel
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from numpy import array
-from cleanlab import Datalab
+from PIL import UnidentifiedImageError
 
-from ..Utils.files import File
+
+from src.Utils.files import File
 from src.Utils.labeller import Labeller
-from ..Utils.resize import resize_picture
+from src.Utils.resize import resize_picture
 
 
 class Cleaner:
@@ -28,6 +30,7 @@ class Cleaner:
         self.clean_data_folder = Path(__file__).parent / "../../CleanData/"
         self.norm_data = Path(__file__).parent / "../../NormalizedData/"
         self.label_file = Path(__file__).parent / "../../labels.xlsx"
+        self.sampled_data_folder = Path(__file__).parent / "../../SampledData"
         self.labels = []
         self.files_util = File()
         self.labeller = Labeller()
@@ -39,9 +42,9 @@ class Cleaner:
         - Resizes them if necessary
         """
 
-        for folder in os.listdir(self.data_folder):
+        for folder in os.listdir(self.sampled_data_folder):
             # Use absolute path in order to have a valid path to traverse
-            abs_folder = os.path.join(self.data_folder, folder)
+            abs_folder = os.path.join(self.sampled_data_folder, folder)
             valid_extensions = ["HEIC", "jpg", "png", "jpeg"]
             print(f"Processing folder {abs_folder}")
 
@@ -55,11 +58,10 @@ class Cleaner:
                 file_name = f"{folder}_{index}.{ext}"
                 out_path = os.path.join(self.clean_data_folder, file_name)
                 shutil.copy(abs_file, out_path)
-                print(f"Saving file {file_name}")
-                self.labeller.label_images(folder, file_name, index)
+                self.labeller.label_images(folder, file_name)
 
         self.labeller.save_labels()
-    
+
     @staticmethod
     def process_labels(data_folder: str, label_path: str):
         """
@@ -74,9 +76,14 @@ class Cleaner:
 
         for _, row in labels_df.iterrows():
             img_path = os.path.join(data_folder, row["Image"])
-            if os.path.isfile (img_path) is False:
+            if os.path.isfile(img_path) is False:
                 continue
-            img = load_img(img_path, target_size=image_size)
+            # Attempt to load the image and if not skip it.
+            try:
+                img = load_img(img_path, target_size=image_size)
+            except UnidentifiedImageError:
+                print(f"{img_path} is invalid skipping...")
+                continue
             x.append(img_to_array(img))
             y.append(row["Label"])
 
@@ -84,7 +91,7 @@ class Cleaner:
         Y = array(y)
         return X, Y
 
-    def resize_all_pictures(self) -> int:
+    def resize_all_pictures(self) -> tuple[int, int]:
         """
         This function ensures that all files are of the same size
         """
@@ -101,3 +108,24 @@ class Cleaner:
             except Exception:
                 invalid_images += 1
         return invalid_images, total_resized_images
+
+    def sampler(self) -> None:
+        """
+        Deletes files that don't make the sample.
+        """
+        sample_rate = 5000 / 12000
+
+        for folder in os.listdir(self.data_folder):
+            #  Get the number of files and the absolute path of the current child folder
+            abs_path = os.path.join(self.data_folder, folder)
+            total_number_files = os.listdir(abs_path).__len__()
+            files_to_save = int(total_number_files * sample_rate)
+            file_indexes_to_save = random.sample(
+                range(0, total_number_files), k=files_to_save
+            )
+            os.makedirs(f"{self.sampled_data_folder}/{folder}", exist_ok=True)
+            for index, file in enumerate(os.listdir(abs_path)):
+                file_abs_path = os.path.join(abs_path, file)
+                if index in file_indexes_to_save:
+                    new_folder = join(self.sampled_data_folder, folder)
+                    shutil.copy(file_abs_path, new_folder)

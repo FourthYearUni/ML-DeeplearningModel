@@ -7,7 +7,7 @@ import datetime
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.utils import to_categorical
 from tensorflow.config.experimental import (
     list_physical_devices,
@@ -50,7 +50,7 @@ class Trainer:
         )
         return (x_train, x_test, y_train, y_test)
 
-    def build_cnn_model(self):
+    def build_cnn_model(self, x_train, x_test, y_train, y_test):
         """
         Builds the cnn model to use
         """
@@ -75,7 +75,6 @@ class Trainer:
                     gpus[0], [VirtualDeviceConfiguration(memory_limit=4096)]
                 )
 
-                self.encode_categorical()
                 model = Sequential(
                     [
                         # Build feature map and activation function and return an activation map.
@@ -86,15 +85,17 @@ class Trainer:
                         Conv2D(32, (3, 3), activation="relu"),
                         MaxPooling2D((2, 2)),
                         Conv2D(32, (3, 3), activation="relu"),
+                        MaxPooling2D((2, 2)),
+                        Conv2D(32, (3, 3), activation="relu"),
                         Flatten(),
+                        Dense(64, activation="relu"),
                         Dense(64, activation="relu"),
                         Dense(64, activation="relu"),
                         Dense(8, activation="softmax"),
                     ]
                 )
 
-                # Call the splitter and obtain the x_train and y_train values
-                x_train, x_test, y_train, y_test = self.split()
+                print(y_train)
                 datagen.fit(x_train)
 
                 model.compile(
@@ -108,7 +109,7 @@ class Trainer:
                     validation_data=(x_test, y_test),
                     callbacks=[early_stop, learning_rate_red, tensor_board],
                 )
-                predictions = model.predict(self.images)
+                predictions = model.predict(x_train)
                 return predictions
             except RuntimeError as e:
                 print(e)
