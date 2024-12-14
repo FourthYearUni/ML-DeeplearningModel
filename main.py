@@ -48,7 +48,7 @@ class Main:
                     delete(x_train, x, axis=0)
                     delete(y_train, x)
         return x_train, y_train
-
+    
 
     
     def run(self) -> None:
@@ -71,15 +71,17 @@ class Main:
         self.trainer.encode_categorical()
 
         # Call the splitter to obtain test and training sets
-        x_train, x_test, y_train, y_test = self.trainer.split()
-        print(x_train)
+        # x_train, x_test, y_train, y_test = self.trainer.split(self.trainer.images, self.trainer.y_onehot)
+        
+        self.trainer.set_augmented_features_labels(self.trainer.images, self.trainer.y_onehot)
         # Train CNN model
-        predictions = self.trainer.build_cnn_model(x_train, x_test, y_train, y_test)
+        self.trainer.build_cnn_model()
         
         # Retrain the model with new values
-        n_xtrain, n_ytrain = self.find_and_fix_label_issues(y_train, predictions,x_train)
-        _ = self.trainer.build_cnn_model(n_xtrain, x_test, n_ytrain, y_test)
-
+        # n_xtrain, n_ytrain = self.find_and_fix_label_issues(y_train, predictions,x_train)
+        # _ = self.trainer.build_cnn_model(n_xtrain, x_test, n_ytrain, y_test)
+        results = self.trainer.train_with_xgboost(self.trainer.aug_y_train, self.trainer.aug_x_train)
+        print(results)
 if __name__ == "__main__":
     main = Main()
     main.run()

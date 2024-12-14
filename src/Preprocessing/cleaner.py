@@ -63,7 +63,7 @@ class Cleaner:
         self.labeller.save_labels()
 
     @staticmethod
-    def process_labels(data_folder: str, label_path: str):
+    def process_labels(data_folder: Path, label_path: Path):
         """
         Process the labels and images and normalizes the image arrays
         """
@@ -104,7 +104,6 @@ class Cleaner:
                 abs_file = os.path.join(self.clean_data_folder, file)
                 total_resized_images += resize_picture(abs_file)
                 total_processed_images += 1
-                print(f"Total images processed: {total_processed_images}")
             except Exception:
                 invalid_images += 1
         return invalid_images, total_resized_images
