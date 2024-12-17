@@ -13,7 +13,7 @@ from pandas import read_excel
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from numpy import array
 from PIL import UnidentifiedImageError
-
+import cv2
 
 from src.Utils.files import File
 from src.Utils.labeller import Labeller
@@ -34,12 +34,26 @@ class Cleaner:
         self.labels = []
         self.files_util = File()
         self.labeller = Labeller()
+    
+    @staticmethod
+    def convert_to_grayscale(srcFile: str, destFile: str) -> None:
+        """
+        Converts an image provided a path to grayscale
+        params:
+            - srcFile: str: A path for the image to be converted
+            - destFile: Path: A path representing where the file will be saved
+        """
+        #print(srcFile)
+        image = cv2.imread(srcFile)
+        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        cv2.imwrite(destFile, gray_image)
 
     def process_images(self) -> None:
         """
         Process images prior to normalization and training
         - Renames images
         - Resizes them if necessary
+        - Converts them to grayscale
         """
 
         for folder in os.listdir(self.sampled_data_folder):
@@ -57,7 +71,8 @@ class Cleaner:
                     ext = valid_extensions[3]
                 file_name = f"{folder}_{index}.{ext}"
                 out_path = os.path.join(self.clean_data_folder, file_name)
-                shutil.copy(abs_file, out_path)
+                self.convert_to_grayscale(abs_file, out_path)
+                # shutil.copy(abs_file, out_path)
                 self.labeller.label_images(folder, file_name)
 
         self.labeller.save_labels()

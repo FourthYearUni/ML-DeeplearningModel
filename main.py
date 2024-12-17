@@ -19,7 +19,7 @@ class Main:
     def __init__(self) -> None:
         self.cleaner = Cleaner()
         # Sample the data
-        # self.cleaner.sampler()
+        self.cleaner.sampler()
 
         # rename files and move them to the clean folder
         self.cleaner.process_images()
@@ -59,7 +59,7 @@ class Main:
         image_array, label_array = self.cleaner.process_labels(
             self.cleaner.clean_data_folder, self.cleaner.label_file
         )
-        print(f"The shape of the labells is {label_array}")
+        print(f"The shape of the labels is {label_array}")
         self.trainer = Trainer(labels=label_array, images=image_array)
 
         # resize all pictures
