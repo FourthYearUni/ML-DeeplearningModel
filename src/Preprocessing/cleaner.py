@@ -44,10 +44,12 @@ class Cleaner:
             - destFile: Path: A path representing where the file will be saved
         """
         #print(srcFile)
-        image = cv2.imread(srcFile)
-        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        cv2.imwrite(destFile, gray_image)
-
+        try:
+            image = cv2.imread(srcFile)
+            gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            cv2.imwrite(destFile, gray_image)
+        except Exception as e:
+            print(srcFile, destFile)
     def process_images(self) -> None:
         """
         Process images prior to normalization and training
@@ -95,7 +97,7 @@ class Cleaner:
                 continue
             # Attempt to load the image and if not skip it.
             try:
-                img = load_img(img_path, target_size=image_size)
+                img = load_img(img_path, color_mode="grayscale", target_size=image_size)
             except UnidentifiedImageError:
                 print(f"{img_path} is invalid skipping...")
                 continue

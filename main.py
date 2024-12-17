@@ -81,7 +81,7 @@ class Main:
         # n_xtrain, n_ytrain = self.find_and_fix_label_issues(y_train, predictions,x_train)
         # _ = self.trainer.build_cnn_model(n_xtrain, x_test, n_ytrain, y_test)
         results = self.trainer.train_with_xgboost(self.trainer.aug_y_train, self.trainer.aug_x_train)
-        print(results)
+        print('Results are ', results)
 if __name__ == "__main__":
     main = Main()
     main.run()

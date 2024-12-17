@@ -93,6 +93,7 @@ class Trainer:
         xgboost classifier model.
         """
         augmented_labels = argmax(augmented_labels, axis=1)
+        augmented_features = augmented_features.reshape(augmented_features.shape[0], -1)
         xg_x_train, xg_x_val, xg_y_train, xg_y_val = self.split(augmented_features, augmented_labels)
 
         xgb_model = XGBClassifier(
@@ -133,7 +134,7 @@ class Trainer:
                     [
                         # Build feature map and activation function and return an activation map.
                         Conv2D(
-                            32, (3, 3), activation="relu", input_shape=(150, 150, 3)
+                            32, (3, 3), activation="relu", input_shape=(150, 150, 1)
                         ),
                         MaxPooling2D((2, 2)),
                         Conv2D(32, (3, 3), activation="relu"),
@@ -163,5 +164,6 @@ class Trainer:
                 print("Shape of aug_x_train", self.aug_x_train)
                 print("Shape of model input", model.input_shape)
                 predictions = model.predict(self.aug_x_train)
+                print(predictions)
             except RuntimeError as e:
                 print(e)
