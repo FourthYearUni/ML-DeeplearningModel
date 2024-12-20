@@ -4,6 +4,7 @@ This module handles any file operations
 
 import os
 import hashlib
+from os.path import isdir
 import subprocess
 
 from openpyxl import Workbook
@@ -78,3 +79,19 @@ class File:
         Saves a passed img to the passed destination
         """
         
+        pass
+
+    def delete_folder(self, folder_path):
+        """
+        Deletes folders passed on
+        """
+        for node in os.listdir(folder_path):
+            path = os.path.join(folder_path, node)
+            if isdir(path):
+                for file in os.listdir(path):
+                    file_path = os.path.join(path, file)
+                    self.delete_file(file_path)
+            else:
+                self.delete_file(path)
+        print(f"Deleted a folder at {folder_path}")
+

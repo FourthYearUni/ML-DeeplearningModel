@@ -31,6 +31,8 @@ class Cleaner:
         self.norm_data = Path(__file__).parent / "../../NormalizedData/"
         self.label_file = Path(__file__).parent / "../../labels.xlsx"
         self.sampled_data_folder = Path(__file__).parent / "../../SampledData"
+        self.problematic_images_folder = Path(__file__).parent / "../../ProblematicImages"
+        self.proper_images_folder = Path(__file__).parent / "../../ProperImages/"
         self.labels = []
         self.files_util = File()
         self.labeller = Labeller()
@@ -113,7 +115,7 @@ class Cleaner:
         """
         Deletes files that don't make the sample.
         """
-        sample_rate = 5000 / 12000
+        sample_rate = 8000 / 12000
 
         for folder in os.listdir(self.data_folder):
             #  Get the number of files and the absolute path of the current child folder
