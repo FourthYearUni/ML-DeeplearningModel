@@ -2,6 +2,7 @@
 Main entry point for the application
 """
 
+import os
 from cleanlab.filter import find_label_issues
 from numpy import argmax, delete, ndarray
 from os import path
@@ -58,7 +59,8 @@ class Main:
                 if issue_state == False:
                     folder = "ProblematicImages"
                 else:
-                    folder = "ProperImages"
+                    folder = f"ProperImages/Stage{flat_y_train[x] + 1}"
+                    os.makedirs(folder, exist_ok=True)
                 print(
                     f"The issue state is {issue_state} and the folder chosen is {folder}"
                 )
