@@ -32,7 +32,7 @@ class Main:
         self.cleaner.sampler()
 
         # rename files and move them to the clean folder
-        self.cleaner.process_images()
+        self.cleaner.process_images(self.cleaner.sampled_data_folder)
 
     def find_and_fix_label_issues(
         self, y_train, predictions, x_train
@@ -42,7 +42,7 @@ class Main:
         - Finds label issues
         - Removes mislabelled images in x_train
         """
-        # Use Cleanlab to find the label issues
+        #: Use Cleanlab to find the label issues
         # Flatten y_train to 1-D
         flat_y_train = argmax(y_train, axis=1)
         label_issues = find_label_issues(labels=flat_y_train, pred_probs=predictions)
@@ -57,13 +57,13 @@ class Main:
                 issue_state = flat_y_train[x] == flat_pred[x]
                 folder = ""
                 if issue_state == False:
-                    folder = "ProblematicImages"
+                    folder = f"ProblematicImages/Stage{flat_y_train[x] + 1}"
                 else:
                     folder = f"ProperImages/Stage{flat_y_train[x] + 1}"
-                    os.makedirs(folder, exist_ok=True)
                 print(
                     f"The issue state is {issue_state} and the folder chosen is {folder}"
                 )
+                os.makedirs(folder, exist_ok=True)
                 full_path = path.join(Path(__file__).parent / folder, file_name)
                 img.save(full_path)
 
@@ -76,7 +76,6 @@ class Main:
         image_array, label_array = self.cleaner.process_labels(
             self.cleaner.clean_data_folder, self.cleaner.label_file
         )
-        print(f"The shape of the labells is {label_array}")
         self.trainer = Trainer(labels=label_array, images=image_array)
 
         # resize all pictures
@@ -89,12 +88,12 @@ class Main:
 
         # Call the splitter to obtain test and training sets
         x_train, x_test, y_train, y_test = self.trainer.split()
-        print(x_train)
+        
         # Train CNN model
-        predictions = self.trainer.build_cnn_model(x_train, x_test, y_train, y_test)
-        print(predictions)
+        # predictions = self.trainer.build_cnn_model(x_train, x_test, y_train, y_test)
+        # print(predictions)
         # Retrain the model with new values
-        self.find_and_fix_label_issues(y_train, predictions, x_train)
+        # self.find_and_fix_label_issues(y_train, predictions, x_train)
         # _ = self.trainer.build_cnn_model(n_xtrain, x_test, n_ytrain, y_test)
 
 

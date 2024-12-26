@@ -1,0 +1,1274 @@
+[
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_69.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_74.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_109.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_147.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_257.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_320.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_324.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_479.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_534.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_607.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_642.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_702.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_813.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_967.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1079.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1254.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1319.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1392.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1424.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1426.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1566.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1571.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_119.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_121.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_139.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_249.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_432.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_479.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_536.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_561.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1072.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1104.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1273.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1312.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1331.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1347.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1522.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_187.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_216.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_347.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_646.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_651.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_923.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_990.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_1131.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_1476.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_1532.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_23.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_112.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_203.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_290.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_344.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_954.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_988.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_1063.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_1164.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_1210.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_95.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_275.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_401.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_631.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_904.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1147.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1160.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1172.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1261.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1323.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_101.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_234.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_280.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_317.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_445.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_557.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_608.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_631.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_688.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_875.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1099.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1122.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1151.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1176.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1228.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1249.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1548.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1577.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_191.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_341.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_447.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_551.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_683.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_705.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1199.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1351.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1439.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1511.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_143.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_319.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_389.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_597.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_654.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_807.jpg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_872.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_929.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_970.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_1137.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_1155.jpeg",
+        "error_type": "PIL/UnidentifiedImageError",
+        "step": "Label processing and Normalization",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_324.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1199.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_631.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_683.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1072.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_23.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_389.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_534.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_203.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_654.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_216.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1571.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_139.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_536.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_597.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1511.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1566.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_970.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1319.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1254.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1426.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_445.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_646.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_112.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_875.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1548.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_631.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_642.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_147.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1172.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_275.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1147.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_561.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_341.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1176.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_347.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_74.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_608.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_319.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_1155.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_121.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_280.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1424.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_187.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_557.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_872.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_990.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1099.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1160.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_401.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1347.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_1476.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_1532.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1273.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1249.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1522.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_929.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_688.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1331.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_607.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_119.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_191.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_651.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_904.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_923.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1079.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_320.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_954.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1439.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1323.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1151.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1104.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_432.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_1137.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_317.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_702.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_143.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_1261.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_234.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_109.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_1351.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_479.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_249.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_1210.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_551.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1122.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1228.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_705.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/5_95.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "5"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_257.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_101.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_290.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_479.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_967.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_1164.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_988.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/7_447.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "7"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/2_1577.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "2"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_344.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_813.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/3_1312.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "3"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/8_1063.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "8"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_69.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/1_1392.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "1"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/6_807.jpg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "6"
+    },
+    {
+        "img_path": "/home/avici1/dev/school/ML-DeeplearningModel/src/Preprocessing/../../CleanData/4_1131.jpeg",
+        "error_type": "NoneType",
+        "step": "Resizing",
+        "stage": "4"
+    }
+]

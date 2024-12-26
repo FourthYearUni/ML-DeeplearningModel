@@ -108,7 +108,7 @@ class Trainer:
                     validation_data=(x_test, y_test),
                     callbacks=[early_stop, learning_rate_red, tensor_board],
                 )
-                predictions = model.predict(x_train)
+                predictions = model.predict(x_train, batch_size=32)
                 return predictions
             except RuntimeError as e:
                 print(e)

@@ -33,18 +33,19 @@ class Cleaner:
         self.sampled_data_folder = Path(__file__).parent / "../../SampledData"
         self.problematic_images_folder = Path(__file__).parent / "../../ProblematicImages"
         self.proper_images_folder = Path(__file__).parent / "../../ProperImages/"
+        self.error_log = Path(__file__).parent / "../../error_log.json"
         self.labels = []
         self.files_util = File()
         self.labeller = Labeller()
-
-    def process_images(self) -> None:
+        
+    def process_images(self, data_folder: Path) -> None:
         """
         Process images prior to normalization and training
         - Renames images
         - Resizes them if necessary
         """
 
-        for folder in os.listdir(self.sampled_data_folder):
+        for folder in os.listdir(data_folder):
             # Use absolute path in order to have a valid path to traverse
             abs_folder = os.path.join(self.sampled_data_folder, folder)
             valid_extensions = ["HEIC", "jpg", "png", "jpeg"]
@@ -57,15 +58,17 @@ class Cleaner:
                 if ext not in valid_extensions:
                     # Assume that the extension has space between it and some other text
                     ext = valid_extensions[3]
-                file_name = f"{folder}_{index}.{ext}"
+
+                # Rename the file to a format like this x_y.ext where x is the stage number and y is the index.
+                file_name = f"{folder.split('Stage')[1]}_{index}.{ext}"
                 out_path = os.path.join(self.clean_data_folder, file_name)
                 shutil.copy(abs_file, out_path)
                 self.labeller.label_images(folder, file_name)
 
         self.labeller.save_labels()
+       
 
-    @staticmethod
-    def process_labels(data_folder: str, label_path: str):
+    def process_labels(self, data_folder: str, label_path: str):
         """
         Process the labels and images and normalizes the image arrays
         """
@@ -85,6 +88,8 @@ class Cleaner:
                 img = load_img(img_path, target_size=image_size)
             except UnidentifiedImageError:
                 print(f"{img_path} is invalid skipping...")
+                stage = str(row["Image"]).split('_')[0]
+                self.files_util.report_error(img_path, 'PIL/UnidentifiedImageError', 'Label processing and Normalization', stage) 
                 continue
             x.append(img_to_array(img))
             y.append(row["Label"])
@@ -115,7 +120,7 @@ class Cleaner:
         """
         Deletes files that don't make the sample.
         """
-        sample_rate = 8000 / 12000
+        sample_rate = 12/12
 
         for folder in os.listdir(self.data_folder):
             #  Get the number of files and the absolute path of the current child folder
