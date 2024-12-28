@@ -6,6 +6,8 @@ import os
 import hashlib
 from os.path import isdir
 import subprocess
+import json
+from pathlib import Path
 
 from openpyxl import Workbook
 import pandas as pd
@@ -23,6 +25,7 @@ class File:
     def __init__(self) -> None:
         self.hash_function = hashlib.sha256()
         self.chunk_size = 4096
+        self.error_log = Path(__file__).parent / "../../error_log.json" 
 
     def calculate_hash(self, file_path: str) -> str:
         """
@@ -67,7 +70,7 @@ class File:
         os.remove(file_path)
         print(f"Deleted file {file_path}")
     
-    def construct_image(self, image_array) -> Image:
+    def construct_image(self, image_array):
         """
         Constructs an Image from a PIL image array
         """
@@ -94,4 +97,29 @@ class File:
             else:
                 self.delete_file(path)
         print(f"Deleted a folder at {folder_path}")
+    
+        
+    def append_to_json(self, file_path: str, contents: dict):
+        """
+        This utility function will open a file append its contents
+        with the contents passed on here.
+        """
+        with open(file_path, 'r+') as f:
+            file_obj = json.load(f)
+            file_obj.append(contents)
+            f.seek(0)
+            json.dump(file_obj, f)
 
+    def report_error(self, img_path, error_type, step, stage):
+        """
+        This function reports errors that happened during processing of images
+        to a json log file using a utility file inside the Files util folder
+        """
+        error_obj = {
+                "img_path": img_path,
+                "error_type": error_type,
+                "step": step,
+                "stage": stage
+        }
+        self.append_to_json(str(self.error_log), error_obj)
+    
