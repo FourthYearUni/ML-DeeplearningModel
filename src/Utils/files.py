@@ -70,7 +70,7 @@ class File:
         os.remove(file_path)
         print(f"Deleted file {file_path}")
     
-    def construct_image(self, image_array) -> Image:
+    def construct_image(self, image_array):
         """
         Constructs an Image from a PIL image array
         """
@@ -98,7 +98,7 @@ class File:
                 self.delete_file(path)
         print(f"Deleted a folder at {folder_path}")
     
-    
+        
     def append_to_json(self, file_path: str, contents: dict):
         """
         This utility function will open a file append its contents

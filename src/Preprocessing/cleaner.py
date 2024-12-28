@@ -89,7 +89,7 @@ class Cleaner:
             except UnidentifiedImageError:
                 print(f"{img_path} is invalid skipping...")
                 stage = str(row["Image"]).split('_')[0]
-                self.files_util.report_error(img_path, 'PIL/UnidentifiedImageError', 'Label processing and Normalization', stage) 
+                self.files_util.report_error(img_path, 'UnidentifiedImageError/Data Corruption', 'Label processing and Normalization', stage) 
                 continue
             x.append(img_to_array(img))
             y.append(row["Label"])
@@ -120,7 +120,7 @@ class Cleaner:
         """
         Deletes files that don't make the sample.
         """
-        sample_rate = 12/12
+        sample_rate = 7/12
 
         for folder in os.listdir(self.data_folder):
             #  Get the number of files and the absolute path of the current child folder
