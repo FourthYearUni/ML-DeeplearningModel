@@ -68,9 +68,6 @@ class LabelIssues:
                     folder = f"ProblematicImages/Stage{flat_y_train[x] + 1}"
                 else:
                     folder = f"ProperImages/Stage{flat_y_train[x] + 1}"
-                print(
-                    f"The issue state is {issue_state} and the folder chosen is {folder}"
-                )
                 makedirs(folder, exist_ok=True)
                 full_path = path.join(
                     Path(__file__).parent / f"../../{folder}", file_name

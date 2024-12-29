@@ -16,7 +16,7 @@ from tensorflow.config.experimental import (
 )
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau, TensorBoard
-
+from numpy import argmax, bincount
 
 class Trainer:
     """
@@ -46,9 +46,16 @@ class Trainer:
         Splits the dataset into training and test components
         """
         x_train, x_test, y_train, y_test = train_test_split(
-            self.images, self.y_onehot, test_size=0.2, random_state=42
+            self.images, self.y_onehot, test_size=0.2, random_state=42, stratify=self.y_onehot
         )
-        return (x_train, x_test, y_train, y_test)
+        x_val, x_Test, y_val, y_Test = train_test_split(
+            x_test, y_test, test_size=0.5, random_state=42, stratify=y_test
+        )
+        print(argmax(y_train), y_train)
+        print("Train set bincount", bincount(argmax(y_train, axis=1)))
+        print("Test set bincount", bincount(argmax(y_Test, axis=1)))
+        print("Validation set bincount", bincount(argmax(y_val, axis=1)))
+        return (x_train, x_Test, y_train, y_Test, x_val, y_val)
 
     def build_cnn_model(self, x_train, x_test, y_train, y_test):
         """

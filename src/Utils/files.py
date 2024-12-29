@@ -68,7 +68,6 @@ class File:
         Delete a file
         """
         os.remove(file_path)
-        print(f"Deleted file {file_path}")
     
     def construct_image(self, image_array):
         """

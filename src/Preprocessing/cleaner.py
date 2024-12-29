@@ -68,7 +68,7 @@ class Cleaner:
         self.labeller.save_labels()
        
 
-    def process_labels(self, data_folder: str, label_path: str):
+    def process_labels(self, data_folder: Path, label_path: Path):
         """
         Process the labels and images and normalizes the image arrays
         """
@@ -87,7 +87,6 @@ class Cleaner:
             try:
                 img = load_img(img_path, target_size=image_size)
             except UnidentifiedImageError:
-                print(f"{img_path} is invalid skipping...")
                 stage = str(row["Image"]).split('_')[0]
                 self.files_util.report_error(img_path, 'Data Corruption', 'Label processing and Normalization', stage) 
                 continue
@@ -111,7 +110,6 @@ class Cleaner:
                 abs_file = os.path.join(self.clean_data_folder, file)
                 total_resized_images += resize_picture(abs_file)
                 total_processed_images += 1
-                print(f"Total images processed: {total_processed_images}")
             except Exception:
                 invalid_images += 1
         return invalid_images, total_resized_images
