@@ -23,7 +23,7 @@ def resize_picture(im_path: str) -> int:
         print(f"{e}. Image is {im_path}")
         parent_folder = im_path.split("CleanData/")[1]
         stage = parent_folder.split("_")[0]
-        files.report_error(im_path, 'NoneType', 'Resizing', stage) 
+        files.report_error(im_path, 'Data Corruption', 'Resizing', stage) 
         files.delete_file(im_path)
 
         return 0

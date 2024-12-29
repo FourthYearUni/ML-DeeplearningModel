@@ -8,9 +8,11 @@ from numpy import argmax, ndarray, max as max_np
 from cleanlab.filter import find_label_issues, confusion_matrix
 from pathlib import Path
 
+from pandas import Series
+
 from src.Utils.files import File
 from src.Preprocessing.cleaner import Cleaner
-
+from src.PostTraining.reporting import Reporting
 
 class LabelIssues:
     """
@@ -23,6 +25,7 @@ class LabelIssues:
         """
         self.files = File()
         self.cleaner = Cleaner()
+        self.reporting = Reporting()
 
     @staticmethod
     def categorise_errors(prediction: int, confidence_score: float, label: int) -> str:
@@ -80,3 +83,38 @@ class LabelIssues:
                     self.files.report_error(
                         full_path, error_type, "Post training", str(flat_y_train[x] + 1)
                     )
+
+
+    def report_errors(self):
+        """
+        This function will plot insights about errors.
+        """
+        df = self.reporting.load_from_file(self.files.error_log)
+        df["stage"] = df["stage"].apply(lambda x: f"Stage {x}")
+        error_count_by_type = df.groupby("error_type")["error_type"].count()
+        error_count_by_stage = df.groupby("stage")["stage"].count()
+        error_types_list = df["error_type"].unique().tolist()
+        error_stages_list = df["stage"].unique().tolist()
+        
+        # Plotting errors by Type
+        properties = error_types_list
+        self.reporting.bar_plot(
+                properties=properties,
+                values=error_count_by_type.values.tolist(),
+                title="Errors by type",
+                x_label="Error types"
+        )
+
+        # Plotting errors by Stage
+        properties = error_stages_list
+        pylt = self.reporting.bar_plot(
+                properties=properties, 
+                values=error_count_by_stage.values.tolist(),
+                title="Errors by Stage",
+                x_label="Stages"
+        )
+
+        pylt.show()
+
+
+

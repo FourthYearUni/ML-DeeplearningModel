@@ -89,7 +89,7 @@ class Cleaner:
             except UnidentifiedImageError:
                 print(f"{img_path} is invalid skipping...")
                 stage = str(row["Image"]).split('_')[0]
-                self.files_util.report_error(img_path, 'UnidentifiedImageError/Data Corruption', 'Label processing and Normalization', stage) 
+                self.files_util.report_error(img_path, 'Data Corruption', 'Label processing and Normalization', stage) 
                 continue
             x.append(img_to_array(img))
             y.append(row["Label"])

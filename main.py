@@ -8,12 +8,10 @@ from src.PostTraining.label_issues import LabelIssues
 from src.Utils.files import File
 
 
-
 class Main:
     """
     Main class fpr the application
     """
-
 
     def __init__(self) -> None:
         self.cleaner = Cleaner()
@@ -55,9 +53,10 @@ class Main:
         # Train CNN model
         predictions = self.trainer.build_cnn_model(x_train, x_test, y_train, y_test)
         print(predictions)
-        # Retrain the model with new values
+        # Indentify and report label errors
         self.label_issues.find_and_fix_label_issues(y_train, predictions, x_train)
-        #_ = self.trainer.build_cnn_model(n_xtrain, x_test, n_ytrain, y_test)
+        self.label_issues.report_errors()
+        # _ = self.trainer.build_cnn_model(n_xtrain, x_test, n_ytrain, y_test)
 
 
 if __name__ == "__main__":
