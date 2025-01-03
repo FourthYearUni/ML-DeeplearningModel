@@ -37,7 +37,9 @@ class Main:
         image_array, label_array = self.cleaner.process_labels(
             self.cleaner.clean_data_folder, self.cleaner.label_file
         )
-        print("================= Finished Cleaning and Preprocessing ====================")
+        print(
+            "================= Finished Cleaning and Preprocessing ===================="
+        )
         self.trainer = Trainer(labels=label_array, images=image_array)
 
         # resize all pictures
@@ -50,15 +52,13 @@ class Main:
 
         # Call the splitter to obtain test and training sets
         x_train, x_test, y_train, y_test, x_val, y_val = self.trainer.split()
-
-        # Train CNN model
         print("================= Starting Training =================")
-        predictions = self.trainer.build_cnn_model(x_train, x_test, y_train, y_test)
-        print(predictions)
+        predictions = self.trainer.train(x_train, y_train, x_test, y_test)
+        # print(predictions)
         # Indentify and report label errors
         print("================  Post Training =====================")
-        self.label_issues.find_and_fix_label_issues(y_train, predictions, x_train)
-        self.label_issues.report_errors()
+        # self.label_issues.find_and_fix_label_issues(y_train, predictions, x_train)
+        # self.label_issues.report_errors()
         # _ = self.trainer.build_cnn_model(n_xtrain, x_test, n_ytrain, y_test)
 
 
